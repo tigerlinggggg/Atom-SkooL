@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 爆學院｜引導師培訓計畫招募</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans TC"', 'sans-serif'],
+            },
+            colors: {
+              neutral: {
+                50: '#f9fafb',
+                100: '#f3f4f6',
+                200: '#e5e7eb',
+                300: '#d1d5db',
+                400: '#9ca3af',
+                500: '#6b7280',
+                600: '#4b5563',
+                700: '#374151',
+                800: '#1f2937',
+                900: '#111827',
+              },
+              blue: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                200: '#bfdbfe',
+                300: '#93c5fd',
+                400: '#60a5fa',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8',
+                800: '#1e40af',
+                900: '#1e3a8a', // Brand Navy
+                950: '#172554',
+              },
+              yellow: {
+                50: '#fefce8',
+                100: '#fef9c3',
+                200: '#fef08a',
+                300: '#fde047',
+                400: '#facc15', // Brand Yellow
+                500: '#eab308',
+                600: '#ca8a04',
+                700: '#a16207',
+                800: '#854d0e',
+                900: '#713f12',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.6s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: "Noto Sans TC", sans-serif;
+        background-color: #f9fafb;
+        color: #1f2937;
+        overflow-y: scroll; /* Force scrollbar to prevent layout shift */
+      }
+
+      /* Hide scrollbar but keep functionality */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* Marker Underline Effect - Lighter */
+      .marker-underline {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+      }
+      .marker-underline::after {
+        content: '';
+        position: absolute;
+        left: -2px;
+        bottom: 2px;
+        width: 105%;
+        height: 0.3em;
+        background-color: #facc15; /* Yellow-400 */
+        opacity: 0.5; /* Reduced opacity for cleaner look */
+        z-index: -1;
+        transform: rotate(-1deg) skew(-10deg);
+        border-radius: 2px;
+      }
+      
+      /* Highlight Text Background */
+      .highlight-bg {
+        background-color: #fef08a; /* Yellow-200 */
+        padding: 0 6px;
+        border-radius: 4px;
+        color: #854d0e; /* Yellow-800 */
+        font-weight: 600;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
